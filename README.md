@@ -7,3 +7,7 @@ This repository contains a shiny app.R file, which generates a custom Shiny app.
 
 The CoE_Dataset file contains data spanning five years for Guatemala and three years for Brazil's Cup of Excellence competitions.
 
+# Screenshot
+The screenshot of app is attached.
+
+
