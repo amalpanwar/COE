@@ -75,18 +75,18 @@ ui <- fluidPage(
   #browser()
   CoE_fltr_10usd_topn_new <- reactive({
     result <- CoE_fltr_10usdnew() %>% count(token, sort = TRUE)
-    #print(result)  # Add print statement to check the contents of the dataframe
-    # return(result) # Ensure to return the result
+    #print(result)  # print statement to check the contents of the dataframe
+    # return(result) # return the result
   })
   column_vector <- reactive({
     result <- CoE_fltr_10usd_topn_new()[[2]]
-    #print(result)  # Add print statement to check the contents of the column vector
-    #return(result) # Ensure to return the result
+    #print(result)  #  to check the contents of the column vector
+    #return(result) #return the result
   })
   quantiles <- reactive({
     result <- quantile(column_vector(), probs = c(0.7, 0.9))
-    #print(result)  # Add print statement to check the calculated quantiles
-    #return(result) # Ensure to return the result
+    #print(result)  #  check the calculated quantiles
+    #return(result) # return the result
   })
  
   
